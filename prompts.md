@@ -1,0 +1,8 @@
+claude ai:
+    1. i'm creating a salary and expense tracker give html css code of input feilds (1. total salary(numbers), 2. expenses name (text), 3.expense amount(number)).
+    2. if i refresh the page , my data should not dissappear. save the Salary expenses list to the browers's localstorage and  on page load, check if data exists and display it.
+    3.use chart.js to display a pie chart showing " remaining balance vs. total expenses.
+    4.add a button " download report" use the library jspdf to generate a pdf file containing the list of expenses and final balance including pie chart.
+    5.add a dropdown to switch currency (eg., INR to USD). use free api (like exchangerate-api ) to convert the displayed values in real-time.
+    6.When the user changes the currency type, the total salary input field should be cleared immediately. The new salary entered by the user must be treated as a fresh value in the newly selected country’s currency and should not be converted from the previously selected currency (e.g., USD). This new salary value should be saved to localStorage and update the application state accordingly. On the next page reload, the application should load the saved salary from localStorage and display the updated total salary in the UI, ensuring that no previous or converted salary value is reused.
+    8.if the remaining balance drops below or equal to 10% of the salary, turns the balance text into red and showing a warning alert
