@@ -3,52 +3,62 @@
             max-width: 500px;
             margin: 50px auto;
             padding: 20px;
-            background: #292828;
+            background: #1a1a1a;
+            color: #ffffff;
         }
         .container {
-            background: #f5f5f5;
+            background: #2d2d2d;
             padding: 20px;
             border-radius: 8px;
+            color: #ffffff;
         }
         input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            border: 1px solid #444;
+            border-radius: 19px;
             box-sizing: border-box;
+            background: #3a3a3a;
+            color: #ffffff;
+        }
+        input::placeholder {
+            color: #aaa;
         }
         button {
             width: 100%;
+           
             padding: 10px;
             background: #007bff;
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 19px;
             cursor: pointer;
         }
         button:hover {
             background: #0056b3;
         }
         .salary-display {
-            background: #e8f5e9;
+            background: #1e3a1e;
             padding: 10px;
             margin: 10px 0;
             border-radius: 4px;
             font-size: 18px;
             font-weight: bold;
+            color: #ffffff;
         }
         .expense-list {
             margin-top: 20px;
         }
         .expense-item {
-            background: white;
+            background: #3a3a3a;
             padding: 10px;
             margin: 5px 0;
-            border-radius: 4px;
+            border-radius: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            color: #ffffff;
         }
         .delete-btn {
             width: auto;
@@ -60,35 +70,36 @@
             background: #c82333;
         }
         .summary {
-            background: #fff3cd;
+            background: #434445;
             padding: 15px;
             margin-top: 20px;
             border-radius: 4px;
             font-weight: bold;
+            color: #ffffff;
         }
         .chart-container {
-            background: white;
+            background: #3a3a3a;
             padding: 20px;
             margin-top: 20px;
             border-radius: 8px;
             max-width: 400px;
+            color: #ffffff;
         }
         #chartCanvas {
             max-width: 100%;
         }
         .button-group {
-            display: flex;
-            gap: 10px;
+            display: block;
             margin-top: 20px;
         }
         .button-group button {
-            flex: 1;
+            width: 100%;
         }
         .download-btn {
-            background: #28a745;
+            background: #1176e3;
         }
         .download-btn:hover {
-            background: #218838;
+            background: #003d82;
         }
         .currency-selector {
             display: flex;
@@ -98,11 +109,14 @@
         }
         .currency-selector label {
             font-weight: bold;
+            color: #ffffff;
         }
         .currency-selector select {
             padding: 8px;
-            border: 1px solid #ddd;
+            border: 1px solid #444;
             border-radius: 4px;
             font-size: 14px;
             cursor: pointer;
+            background: #3a3a3a;
+            color: #ffffff;
         }

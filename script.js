@@ -96,7 +96,6 @@ let expenses = [];
                 
                 // Display loaded data
                 renderExpenses();
-                updateSalaryDisplay();
                 updateSummary();
             }
         }
@@ -196,7 +195,7 @@ let expenses = [];
             const isNegativeBalance = remainingBalance < 0;
             
             // Determine balance color
-            let balanceColor = 'green';
+            let balanceColor = '#2bfb2b';
             if (isNegativeBalance) {
                 balanceColor = 'red';
             } else if (isLowBalance) {
@@ -348,12 +347,12 @@ let expenses = [];
                     datasets: [{
                         data: [remainingBalance > 0 ? remainingBalance * baseCurrencyValue : 0, totalExpenses * baseCurrencyValue],
                         backgroundColor: [
-                            '#4CAF50',
-                            '#FF6384'
+                            '#3bcf40',
+                            '#e0224b'
                         ],
                         borderColor: [
-                            '#45a049',
-                            '#FF5373'
+                            '#3ade42',
+                            '#e42c4e'
                         ],
                         borderWidth: 2
                     }]
