@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary & Expense Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Salary & Expense Tracker</h1>
+        
+        <div class="currency-selector">
+            <label for="currencySelect">Currency:</label>
+            <select id="currencySelect" onchange="changeCurrency()">
+                <option value="USD">USD ($)</option>
+                <option value="INR">INR (₹)</option>
+                <option value="EUR">EUR (€)</option>
+                <option value="GBP">GBP (£)</option>
+                <option value="JPY">JPY (¥)</option>
+                <option value="AUD">AUD (A$)</option>
+                <option value="CAD">CAD (C$)</option>
+            </select>
+        </div>
+        
+        <input type="number" id="salary" placeholder="Total Salary" min="0" onchange="updateSalary()">
+        <div id="salaryDisplay" class="salary-display" style="display: none;"></div>
+        
+        <h2>Add Expense</h2>
+        <input type="text" id="expenseName" placeholder="Expense Name">
+        <input type="number" id="expenseAmount" placeholder="Expense Amount" min="0">
+        <button onclick="addExpense()">Add Expense</button>
+        
+        <div class="expense-list">
+            <h2>Expenses</h2>
+            <ul id="expenseList" style="list-style-type: none; padding: 0;"></ul>
+        </div>
+        
+        <div id="summary"></div>
+        
+        <div class="chart-container">
+            <h2>Balance vs Expenses Chart</h2>
+            <canvas id="chartCanvas"></canvas>
+        </div>
+        
+        <div class="button-group">
+            <button class="download-btn" onclick="downloadReport()">Download Report</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
